@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center font-bold mt-20">Money Master💰</h1>
+    </header>
+    <main>
+        <section>
+            <div class="w-10/12 mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mb-10">
+                <div class="flex-1 ">
+                    <img class="shadow-2xl" src="./images/money png.png" alt="master.png">
+                </div>
+
+                <div class="flex-1 shadow-lg bg-slate-300 text-black">
+                    <h4 class="text-center mt-20 text-4xl">Income</h4>
+                    <div class="text-center text-2xl mt-5 space-y-7">
+                        <h2>Income: <input class="ml-5 bg-gray-200 " type="number" name="" id="total-income" placeholder="Total-Income"></h2>
+                        <h1>Expenses</h1>
+
+                        <h2>Food: <input class="ml-5 bg-gray-200 " type="number" name="" id="food-input" placeholder="Cost"></h2>
+
+                        <h2>Rent: <input class="ml-5 bg-gray-200 " type="number" name="" id="rent-input" placeholder="Cost"></h2>
+
+                        <h2>Cloth: <input class="ml-5 bg-gray-200 " type="number" name="" id="cloth-input" placeholder="Cost"></h2>
+
+                        <button onclick="calculateMoney()" id="calculate-btn" class="btn btn-primary px-20">Calculate</button>
+
+                        <h2>Total Expenses: <span id="expenses-total">00</span> $</h2>
+                        <h2>Balance: <span id="balance-total">00</span> $</h2>
+                        <h2>Save: <input id="save-input" class="w-20  ml-5" type="number"> % <button onclick="calculateMoney()" class="bg-amber-600 px-10 rounded-md hover:bg-lime-600">Save</button></h2>
+
+                        <h3>Saving Amount: <span id="saving-total">00</span> $</h3>
+                        <h3>Remaining Balance: <span id="remaining-total">00</span> $</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/money.js"></script>
+</body>
+</html>
