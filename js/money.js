@@ -8,10 +8,10 @@ function calculateMoney(){
    const totalExpenses    = foodInputValue + rentInputValue + clothInputValue;
    const totalBalance     = incomeInputValue - totalExpenses;
 
-//    if(totalExpenses > totalBalance){
-//         alert('You Have Not Enough Money')
-//         return;
-//    }
+   if(totalExpenses > incomeInputValue){
+        alert('You Have Not Enough Money')
+        return;
+   }
 
    if(isNaN(totalExpenses) || isNaN(totalBalance)){
         return;
